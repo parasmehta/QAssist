@@ -1,5 +1,6 @@
 package com.team.qool.hpibootcamp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,9 +17,9 @@ public class GridViewImageTextActivity extends AppCompatActivity {
     } ;
 
     int[] gridViewImageId = {
-            R.drawable.ic_launcher_background, R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_background, R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_background, R.drawable.ic_launcher_foreground
+            R.drawable.red_and_blue_1, R.drawable.red_and_blue_1,
+            R.drawable.red_and_blue_1, R.drawable.red_and_blue_1,
+            R.drawable.red_and_blue_1, R.drawable.red_and_blue_1
     };
 
     @Override
@@ -35,6 +36,7 @@ public class GridViewImageTextActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
                 Toast.makeText(GridViewImageTextActivity.this, "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
+                startActivity(new Intent(GridViewImageTextActivity.this, ImageFlashingActivity.class));
             }
         });
 
