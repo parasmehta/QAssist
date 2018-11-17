@@ -6,15 +6,14 @@
     android:orientation="vertical">
 
     <TextView
-
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Score: 35"
+        android:text="Welcome back, Sam!"
         android:textColor="#00FF00"
-        android:paddingLeft="225dp"
+        android:paddingLeft="25dp"
         android:paddingRight="5dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="25dp"
         android:paddingTop="5dp"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -39,8 +38,23 @@
         android:id="@+id/grid_view_image_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnWidth="110dp"
         android:gravity="center"
         android:numColumns="auto_fit" />
 </LinearLayout>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Score: 35"
+        android:textColor="#00FF00"
+        android:paddingLeft="25dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="25dp"
+        android:paddingTop="5dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        />
+
 </LinearLayout>

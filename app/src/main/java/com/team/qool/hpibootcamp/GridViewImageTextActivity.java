@@ -1,5 +1,6 @@
 package com.team.qool.hpibootcamp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -38,6 +39,10 @@ public class GridViewImageTextActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
                 Toast.makeText(GridViewImageTextActivity.this, "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
+                Intent myIntent = new Intent(GridViewImageTextActivity.this, FullscreenActivity.class);
+//                myIntent.putExtra("key", value); //Optional parameters
+                GridViewImageTextActivity.this.startActivity(myIntent);
+
             }
         });
 
