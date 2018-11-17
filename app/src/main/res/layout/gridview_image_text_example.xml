@@ -5,6 +5,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score: 35"
+        android:textColor="#00FF00"
+        android:paddingLeft="225dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        />
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageFavourites"-->
+        <!--android:layout_gravity="right" />-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#C3C3C3"
+        android:orientation="horizontal">
+
     <GridView
         android:id="@+id/grid_view_image_text"
         android:layout_width="match_parent"
@@ -12,4 +42,5 @@
         android:columnWidth="110dp"
         android:gravity="center"
         android:numColumns="auto_fit" />
+</LinearLayout>
 </LinearLayout>
