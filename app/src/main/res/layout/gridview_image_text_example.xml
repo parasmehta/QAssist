@@ -7,11 +7,10 @@
 
     <TextView
 
-        android:id="@+id/header"
+        android:id="@+id/score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Score: 35"
-        android:textColor="#00FF00"
         android:paddingLeft="225dp"
         android:paddingRight="5dp"
         android:paddingBottom="5dp"

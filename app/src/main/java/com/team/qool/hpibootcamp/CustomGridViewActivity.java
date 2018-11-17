@@ -49,7 +49,7 @@ public class CustomGridViewActivity extends BaseAdapter {
             textViewAndroid.setText(gridViewString[i]);
             imageViewAndroid.setImageResource(gridViewImageId[i]);
         } else {
-            gridViewAndroid = (View) convertView;
+            gridViewAndroid = convertView;
         }
 
         return gridViewAndroid;
