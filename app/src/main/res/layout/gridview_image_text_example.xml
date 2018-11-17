@@ -6,12 +6,11 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/header"
+        android:id="@+id/score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome back, Sam!"
-        android:textColor="#00FF00"
-        android:paddingLeft="25dp"
+        android:text="Score: 35"
+        android:paddingLeft="225dp"
         android:paddingRight="5dp"
         android:paddingBottom="25dp"
         android:paddingTop="5dp"

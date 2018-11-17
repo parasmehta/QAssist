@@ -17,10 +17,24 @@
             </intent-filter>
         </activity>
         <activity
+
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_fullscreen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team.qool.hpibootcamp.GridViewImageTextActivity" />
+        </activity>
+        <activity
+            android:name=".ImageFlashingActivity"
+            android:label="@string/title_activity_image_flashing"
+            android:parentActivityName=".GridViewImageTextActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team.qool.hpibootcamp.GridViewImageTextActivity" />
+        </activity>
     </application>
 
 </manifest>
