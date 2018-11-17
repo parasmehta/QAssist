@@ -19,9 +19,15 @@ public class GridViewImageTextActivity extends AppCompatActivity {
     } ;
 
     int[] gridViewImageId = {
+<<<<<<< HEAD
+            R.drawable.red_and_blue_1, R.drawable.red_and_blue_1,
+            R.drawable.red_and_blue_1, R.drawable.red_and_blue_1,
+            R.drawable.red_and_blue_1, R.drawable.red_and_blue_1
+=======
             R.drawable.ic_hearing_black_48dp, R.drawable.ic_remove_red_eye_black_48dp,
             R.drawable.ic_center_focus_weak_black_48dp, R.drawable.ic_settings_system_daydream_black_48dp,
             R.drawable.ic_directions_walk_black_48dp, R.drawable.stethoscope
+>>>>>>> 4c29b54fd07f1930b55bf3a86436408ab57d2262
     };
 
     @Override
