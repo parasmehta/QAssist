@@ -40,7 +40,7 @@ public class ImageFlashingActivity extends AppCompatActivity {
             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                image.setImageResource(R.drawable.red_and_blue_2);
+                image.setImageResource(R.drawable.red_and_blue_3);
                 Handler handler = new Handler();
 
                 handler.postDelayed(new Runnable() {
@@ -53,7 +53,7 @@ public class ImageFlashingActivity extends AppCompatActivity {
                             }
                         });
                     }
-                }, 500);
+                }, 1000);
 
             }
         });
@@ -75,10 +75,10 @@ public class ImageFlashingActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
 
                         int number = Integer.valueOf(input.getText().toString());
-                        if (number == 1){
+                        if (number == 2){
                             Toast.makeText(ImageFlashingActivity.this,"That was correct! You just earned 5 credits for this assessment.", Toast.LENGTH_LONG).show();
                         } else {
-                            Toast.makeText(ImageFlashingActivity.this,"The right answer would have been 1. Anyway, thanks for doing this assessment, you just earned 5 credits for it.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(ImageFlashingActivity.this,"The right answer would have been 2. Anyway, thanks for doing this assessment, you just earned 5 credits for it.", Toast.LENGTH_LONG).show();
                         }
                         finish();
                     }
