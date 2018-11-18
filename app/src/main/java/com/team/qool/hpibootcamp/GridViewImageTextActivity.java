@@ -47,9 +47,11 @@ public class GridViewImageTextActivity extends AppCompatActivity {
                 if(gridViewString[i].equals("Attention")){
                     Intent myIntent = new Intent(GridViewImageTextActivity.this, FullscreenActivity.class);
                     GridViewImageTextActivity.this.startActivity(myIntent);
+                } else if(gridViewString[i].equals("Checkup")) {
+                    Intent myIntent = new Intent(GridViewImageTextActivity.this, CheckupActivity.class);
+                    startActivityForResult(myIntent, REQ_CODE_MINI_GAME);
                 } else {
-                        startActivityForResult(new Intent(GridViewImageTextActivity.this, ImageFlashingActivity.class), REQ_CODE_MINI_GAME);
-
+                    startActivityForResult(new Intent(GridViewImageTextActivity.this, ImageFlashingActivity.class), REQ_CODE_MINI_GAME);
                 }
             }
         });

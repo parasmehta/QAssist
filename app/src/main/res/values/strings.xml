@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">QooL</string>
-<!--<<<<<<< HEAD-->
-<!--=======-->
+    <!--<<<<<<< HEAD-->
+    <!--=======-->
     <string name="title_activity_image_flashing">ImageFlashingActivity</string>
-<!--&gt;>>>>>> e69b6c85844736b11c7eb654ab1da7a2db400b6a-->
+    <!--&gt;>>>>>> e69b6c85844736b11c7eb654ab1da7a2db400b6a-->
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_checkup">CheckupActivity</string>
 </resources>
