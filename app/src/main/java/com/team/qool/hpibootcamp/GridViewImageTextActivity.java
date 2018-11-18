@@ -43,7 +43,6 @@ public class GridViewImageTextActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
-                Toast.makeText(GridViewImageTextActivity.this, "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
                 if(gridViewString[i].equals("Attention")){
                     Intent myIntent = new Intent(GridViewImageTextActivity.this, FullscreenActivity.class);
                     GridViewImageTextActivity.this.startActivity(myIntent);
@@ -61,9 +60,9 @@ public class GridViewImageTextActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         if (requestCode==REQ_CODE_MINI_GAME){
-            int prevScore = Integer.valueOf(score.getText().toString().split(" ")[1]);
+            int prevScore = Integer.valueOf(score.getText().toString().substring(1));
             prevScore+=5;
-            score.setText(prevScore);
+            score.setText("+" + prevScore);
         }
     }
 }
