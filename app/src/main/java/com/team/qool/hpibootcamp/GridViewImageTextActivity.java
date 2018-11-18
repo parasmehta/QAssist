@@ -34,7 +34,7 @@ public class GridViewImageTextActivity extends AppCompatActivity {
 
         score = findViewById(R.id.score);
         imgView = (ImageView) findViewById(R.id.imageFavourites);
-        imgView.setImageResource(R.drawable.logo);
+        imgView.setImageResource(R.drawable.logo1);
         CustomGridViewActivity adapterViewAndroid = new CustomGridViewActivity(GridViewImageTextActivity.this, gridViewString, gridViewImageId);
         androidGridView=(GridView)findViewById(R.id.grid_view_image_text);
         androidGridView.setAdapter(adapterViewAndroid);
