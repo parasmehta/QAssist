@@ -33,8 +33,8 @@ public class GridViewImageTextActivity extends AppCompatActivity {
         setContentView(R.layout.gridview_image_text_example);
 
         score = findViewById(R.id.score);
-//        imgView = (ImageView) findViewById(R.id.imageFavourites);
-//        imgView.setImageResource(R.drawable.ic_launcher_background);
+        imgView = (ImageView) findViewById(R.id.imageFavourites);
+        imgView.setImageResource(R.drawable.logo);
         CustomGridViewActivity adapterViewAndroid = new CustomGridViewActivity(GridViewImageTextActivity.this, gridViewString, gridViewImageId);
         androidGridView=(GridView)findViewById(R.id.grid_view_image_text);
         androidGridView.setAdapter(adapterViewAndroid);
@@ -63,7 +63,7 @@ public class GridViewImageTextActivity extends AppCompatActivity {
         if (requestCode==REQ_CODE_MINI_GAME){
             int prevScore = Integer.valueOf(score.getText().toString().split(" ")[1]);
             prevScore+=5;
-            score.setText("Score: " + prevScore);
+            score.setText(prevScore);
         }
     }
 }
