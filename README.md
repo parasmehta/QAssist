@@ -8,4 +8,4 @@ In the current prototype, a participant can:
 
 Each mini-game plays out a simple test to measure a value, e.g., reaction time, vision, etc. 
 
-QAssist was developed during the HPI Startup Bootcamp 2018.
+QAssist was developed during the [HPI Startup Bootcamp 2018](https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps/hpi-startup-bootcamp-2018.html).
